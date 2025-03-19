@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Correctly import Routes, Route, Link
 import UseReducer from './pages/UseReducer.jsx';
 import TodoApp from './pages/TodoApp.jsx';
+import TodoApp2 from '../components/TodoApp2.jsx';
 export default function App() {
   return (
     <Router>
@@ -24,6 +25,14 @@ export default function App() {
               Bai 2
             </Link>
           </li>
+          <li>
+            <Link
+              to="/bai2"
+              className="hover:text-gray-300 transition duration-300 ease-in-out transform hover:scale-110"
+            >
+              Bai 6
+            </Link>
+          </li>
         </ul>
       </nav>
 
@@ -31,6 +40,7 @@ export default function App() {
       <Routes>
         <Route path="/bai1" element={<UseReducer />} />
         <Route path="/bai2" element={<TodoApp />} />
+        <Route path="/bai6" element={<TodoApp2 />} />
       </Routes>
     </Router>
   );
