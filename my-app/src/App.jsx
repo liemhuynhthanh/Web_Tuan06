@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Correctly import Routes, Route, Link
 import UseReducer from './pages/UseReducer.jsx';
 import TodoApp from './pages/TodoApp.jsx';
-import TodoApp2 from '../components/TodoApp2.jsx';
+import TodoApp2 from './pages/TodoApp2.jsx';
 export default function App() {
   return (
     <Router>
@@ -27,7 +27,7 @@ export default function App() {
           </li>
           <li>
             <Link
-              to="/bai2"
+              to="/bai6"
               className="hover:text-gray-300 transition duration-300 ease-in-out transform hover:scale-110"
             >
               Bai 6
